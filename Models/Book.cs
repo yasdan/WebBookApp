@@ -3,7 +3,7 @@ namespace WebBookApp.Models
 {
     public class Book
     {
-        [KeyAttribute]
+        [Key]
         public int BookId {  get; set; }
         [Required]
         public string? Title { get; set; }

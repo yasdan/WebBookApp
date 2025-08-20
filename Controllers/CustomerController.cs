@@ -23,6 +23,7 @@ namespace WebBookApp.Controllers
         public async Task<IActionResult> Index()
         {
             return View(await _context.Customer.ToListAsync());
+            
         }
 
         // GET: Customer/Details/5

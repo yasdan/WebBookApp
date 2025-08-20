@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using WebBookApp.Data;
+using WebBookApp.Data; // context class with DbSet properties
 using WebBookApp.Models;
 
 namespace WebBookApp.Controllers

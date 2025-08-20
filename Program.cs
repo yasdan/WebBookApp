@@ -9,7 +9,9 @@ namespace WebBookApp
         {
             var builder = WebApplication.CreateBuilder(args);
             builder.Services.AddDbContext<WebBookAppContext>(options =>
-                options.UseSqlServer(builder.Configuration.GetConnectionString("WebBookAppContext") ?? throw new InvalidOperationException("Connection string 'WebBookAppContext' not found.")));
+                options.UseSqlServer(builder.Configuration.GetConnectionString
+                ("WebBookAppContext") ?? throw new InvalidOperationException
+                ("Connection string 'WebBookAppContext' not found.")));
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();

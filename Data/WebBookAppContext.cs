@@ -14,6 +14,8 @@ namespace WebBookApp.Data
         {
         }
 
+        // As many as DBSets you need for your application according to your models
+
         public DbSet<WebBookApp.Models.Book> Book { get; set; } = default!;
         public DbSet<WebBookApp.Models.Customer> Customer { get; set; } = default!;
         public DbSet<WebBookApp.Models.Sale> Sale { get; set; } = default!;
